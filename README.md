@@ -49,6 +49,44 @@ Per compilare il progetto in Arduino IDE servono queste librerie:
 - **Adafruit ST7735 and ST7789 Library**
 - **DFRobot_ENS160**
 
+## Collegamenti elettrici
+
+Scheda: **ESP32** (Dev Module). Pin verificati su `Stazione_Ambientale/AppConfig.h`.
+
+### Display ST7789V (SPI)
+
+| ST7789 | ESP32 |
+|---|---|
+| VCC | 3V3 |
+| GND | GND |
+| SCK (SCL) | GPIO18 |
+| MOSI (SDA) | GPIO23 |
+| CS | GPIO5 |
+| DC | GPIO27 |
+| RST | GPIO26 |
+| BLK / BL (retroilluminazione, se presente) | 3V3 |
+
+### Bus I2C 0 — ENS160 + AHT21 e APDS-9930
+
+| Sensori | ESP32 |
+|---|---|
+| VCC | 3V3 |
+| GND | GND |
+| SDA | GPIO21 |
+| SCL | GPIO22 |
+
+### Bus I2C 1 — modulo BMP280 + AHT20 (si usa solo il BMP280)
+
+| Sensore | ESP32 |
+|---|---|
+| VCC | 3V3 |
+| GND | GND |
+| SDA | GPIO16 |
+| SCL | GPIO17 |
+
+- Tutti i moduli a **3,3 V**.
+- Due bus I2C separati evitano il conflitto di indirizzi tra l'AHT21 della scheda ENS160 e l'AHT20 del modulo BMP280.
+
 ## Contenuto del repository
 
 | Percorso | Descrizione |
