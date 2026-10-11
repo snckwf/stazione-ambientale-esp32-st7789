@@ -87,6 +87,9 @@ Scheda: **ESP32** (Dev Module). Pin verificati su `Stazione_Ambientale/AppConfig
 - Tutti i moduli a **3,3 V**.
 - Due bus I2C separati evitano il conflitto di indirizzi tra l'AHT21 della scheda ENS160 e l'AHT20 del modulo BMP280.
 
+- Alimentazione: ESP32 dalla USB a 5 V (alimentatore da almeno 1 A); tutti i moduli prendono i 3,3 V dal pin **3V3** con **GND comune**.
+- I moduli I2C hanno già le resistenze di pull-up a bordo: non servono resistenze esterne. Se un sensore non viene trovato, controlla che sullo stesso bus non ci siano due moduli con lo stesso indirizzo.
+
 ## Contenuto del repository
 
 | Percorso | Descrizione |
