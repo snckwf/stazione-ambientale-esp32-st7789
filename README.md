@@ -5,7 +5,7 @@
 >
 > Altri progetti di elettronica, Arduino, ESP32, Home Assistant e stampa 3D su **[www.emgi.it](https://www.emgi.it)**
 
-![Stazione ambientale ESP32 con display ST7789, ENS160, AHT21, BMP280 e luminosità ambiente APDS-9930](immagini/cover-2026-stazione-ambientale-esp32-con-st7789-ens160-aht21-e-bmp280.png)
+![Stazione ambientale ESP32 con display ST7789, ENS160, AHT21, BMP280 e luminosità ambiente APDS-9930](immagini/copertina-3d.jpg)
 
 Questo progetto si integra in Home Assistant. Se non l’hai ancora installato, parti dalla guida [Come installare Home Assistant su Raspberry Pi 4, 5 e Zero](https://www.emgi.it/2026/04/14/installare-home-assistant-su-raspberry-pi/).
 
